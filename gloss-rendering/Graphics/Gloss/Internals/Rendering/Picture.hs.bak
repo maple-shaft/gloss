@@ -87,9 +87,9 @@ drawPicture state circScale picture
         --      so disable it during the renderString call.
         Text str 
          -> do
-                GL.blend        $= GL.Disabled
+                --GL.blend        $= GL.Disabled
                 GL.preservingMatrix $ GLUT.renderString GLUT.Helvetica18 str
-                GL.blend        $= GL.Enabled
+                --GL.blend        $= GL.Enabled
 
         -- colors with float components.
         Color col p
